@@ -3,33 +3,54 @@ package ru.netology.domain;
 public class LikesInfo {
     private int id;
     private int ownerId;
-    private int countId;
     private int data;
     private String typeLike;
-        // + get/set на все поля
-   return int countLikes;
-    }
+    private CountTheAmountID countTheAmountID;
+    // + get/set на все поля
+
+}
+
+public class CountTheAmountID {
+    private int count;
+    private boolean userLikes;
+    private boolean canLike;
+    private boolean canPublish;
+    // + get/set
+}
 
 public class CommentsInfo {
     private int authorid;
     private int countId;
-    private int data;
-    private String toWhomComments;
+    private CoundComments coundCommets;
     private String textInfo;
-    return int countComments;
-     // + get/set на все поля
+    // + get/set
 }
-public class RepostsInfo  {
+
+public class CoundComments {
+    private int count;
+    private boolean canPost;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
+}
+
+public class RepostsInfo {
     private int ownerPostId;
     private boolean userRepost;
-
-    // + get/set на все поля
-    return int countRepost;
-}
-public class countView {
-    private int countID;
+    private CountRepost countRepost;
     // + get/set
-    return int countViews;
+}
+
+public class CountRepost {
+    private int count;
+    private boolean userReposted;
+    // + get/set
+}
+
+public class countView {
+    private int count;
+
+    // + get/set
 
 }
 
