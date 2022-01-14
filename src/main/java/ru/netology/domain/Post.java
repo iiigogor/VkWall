@@ -1,57 +1,22 @@
 package ru.netology.domain;
 
-public class LikesInfo {
+public class Post {
     private int id;
     private int ownerId;
+    private int fromid;
+    private int createdBy;
     private int data;
-    private String typeLike;
-    private CountTheAmountID countTheAmountID;
-    // + get/set на все поля
+    private String text;
+    private int replyOwnerId;
+    private int replyPostId;
+    private boolean friendsOnly;
+    private CommentsInfo commentsInfo;
+    private CopyrightInfo copirightInfo;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private CountViews countViews;
 
 }
 
-public class CountTheAmountID {
-    private int count;
-    private boolean userLikes;
-    private boolean canLike;
-    private boolean canPublish;
-    // + get/set
-}
-
-public class CommentsInfo {
-    private int authorid;
-    private int countId;
-    private CoundComments coundCommets;
-    private String textInfo;
-    // + get/set
-}
-
-public class CoundComments {
-    private int count;
-    private boolean canPost;
-    private boolean groupsCanPost;
-    private boolean canClose;
-    private boolean canOpen;
-}
-
-public class RepostsInfo {
-    private int ownerPostId;
-    private boolean userRepost;
-    private CountRepost countRepost;
-    // + get/set
-}
-
-public class CountRepost {
-    private int count;
-    private boolean userReposted;
-    // + get/set
-}
-
-public class countView {
-    private int count;
-
-    // + get/set
-
-}
 
 

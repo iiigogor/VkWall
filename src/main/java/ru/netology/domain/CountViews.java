@@ -1,2 +1,5 @@
-package ru.netology.domain;public class CountViews {
+package ru.netology.domain;
+
+public class CountViews {
+    private int count;
 }
